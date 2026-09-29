@@ -1,16 +1,16 @@
 import Link from "next/link";
-import { 
-  MapPin, 
-  Mail, 
-  Phone, 
-  Clock, 
-  Brain, 
-  Code, 
-  Smartphone, 
-  Cloud, 
-  PenTool, 
-  BarChart3, 
-  ShieldCheck 
+import {
+  MapPin,
+  Mail,
+  Phone,
+  Clock,
+  Brain,
+  Code,
+  Smartphone,
+  Cloud,
+  PenTool,
+  BarChart3,
+  ShieldCheck
 } from "lucide-react";
 import { FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import Image from "next/image";
@@ -47,7 +47,7 @@ export function Footer() {
 
       <div className="w-full max-w-[1920px] mx-auto px-6 md:px-12 xl:px-24 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 mb-20">
-          
+
           {/* Column 1: Brand & Socials */}
           <div className="lg:col-span-4 flex flex-col items-start pr-0 lg:pr-6">
             <Link href="/" className="flex items-center gap-3 group mb-8">
@@ -62,25 +62,25 @@ export function Footer() {
 
             {/* Social Icons */}
             <div className="flex items-center gap-4">
-              <a 
-                href="https://www.instagram.com/nextgen2ai/" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/nextgen2ai/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-[#0A0512] border border-[#D946EF]/50 flex items-center justify-center text-white hover:bg-[#D946EF]/20 transition-all shadow-[0_0_15px_rgba(217,70,239,0.25)] hover:shadow-[0_0_20px_rgba(217,70,239,0.5)]"
               >
                 <FaInstagram size={18} />
               </a>
-              <a 
-                href="https://x.com/nextgen2ai" 
-                target="_blank" 
+              <a
+                href="https://x.com/nextgen2ai"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-[#0A0512] border border-[#7C3AED]/50 flex items-center justify-center text-white hover:bg-[#7C3AED]/20 transition-all shadow-[0_0_15px_rgba(124,58,237,0.25)] hover:shadow-[0_0_20px_rgba(124,58,237,0.5)]"
               >
                 <FaTwitter size={18} />
               </a>
-              <a 
-                href="https://www.linkedin.com/in/next-gen2ai-342759369/" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/in/next-gen2ai-342759369/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-[#0A0512] border border-[#3B82F6]/50 flex items-center justify-center text-white hover:bg-[#3B82F6]/20 transition-all shadow-[0_0_15px_rgba(59,130,246,0.25)] hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]"
               >
@@ -180,13 +180,29 @@ export function Footer() {
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#D946EF] via-40% via-[#3B82F6] via-60% to-transparent blur-[8px] opacity-30" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/2 h-[2px] bg-gradient-to-r from-[#D946EF] to-[#3B82F6] blur-[2px] shadow-[0_0_15px_#3B82F6]" />
         </div>
+        <div className="border-t border-white/10 mt-8 pt-5 text-center">
+          <p className="text-sm text-gray-400">
+            © 2026 LearnMore Technologies. All Rights Reserved.
+          </p>
 
-        <div className="flex flex-col md:flex-row justify-start items-center gap-6 md:gap-10">
+          <p className="mt-2 text-xl text-gray-500">
+            Designed &amp; Developed by{" "}
+            <a
+              href="https://rakshard.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-white transition-colors">
+              Raksha R.D
+            </a>
+          </p>
+        </div>
+
+        {/* <div className="flex flex-col md:flex-row justify-start items-center gap-6 md:gap-10">
 
           <p className="text-[#8B92A5] text-sm font-medium">
             © 2026 NextGen2AI. All rights reserved.
           </p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
