@@ -180,29 +180,14 @@ export function Footer() {
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#D946EF] via-40% via-[#3B82F6] via-60% to-transparent blur-[8px] opacity-30" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/2 h-[2px] bg-gradient-to-r from-[#D946EF] to-[#3B82F6] blur-[2px] shadow-[0_0_15px_#3B82F6]" />
         </div>
-        <div className="border-t border-white/10 mt-8 pt-5 text-center">
-          <p className="text-sm text-gray-400">
-            © 2026 LearnMore Technologies. All Rights Reserved.
-          </p>
 
-          <p className="mt-2 text-xl text-gray-500">
-            Designed &amp; Developed by{" "}
-            <a
-              href="https://rakshard.github.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white transition-colors">
-              Raksha R.D
-            </a>
-          </p>
-        </div>
 
-        {/* <div className="flex flex-col md:flex-row justify-start items-center gap-6 md:gap-10">
+        <div className="flex flex-col md:flex-row justify-start items-center gap-6 md:gap-10">
 
           <p className="text-[#8B92A5] text-sm font-medium">
             © 2026 NextGen2AI. All rights reserved.
           </p>
-        </div> */}
+        </div>
       </div>
     </footer>
   );
