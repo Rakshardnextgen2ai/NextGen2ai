@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" width="520" height="160">
+  <defs>
+    <!-- Radial highlights for 3D sphere look -->
+    <radialGradient id="pinkSphere" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FF6EB4" />
+      <stop offset="55%" stop-color="#FA1087" />
+      <stop offset="100%" stop-color="#C20066" />
+    </radialGradient>
+    <radialGradient id="blueSphere" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#8BB4F8" />
+      <stop offset="55%" stop-color="#4B68F6" />
+      <stop offset="100%" stop-color="#2B3FB8" />
+    </radialGradient>
+    <radialGradient id="centerSphere" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="70%" stop-color="#1E1B4B" />
+      <stop offset="100%" stop-color="#0F0E2A" />
+    </radialGradient>
+    
+    <!-- Wordmark text gradients -->
+    <linearGradient id="whiteGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F1F5F9" />
+    </linearGradient>
+    <linearGradient id="pinkTextGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2E93" />
+      <stop offset="60%" stop-color="#FA1087" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+
+    <!-- Glowing filters -->
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Network Graph Icon on the Left -->
+  <g transform="translate(68, 62)">
+    <!-- Connecting Spokes -->
+    <g stroke-linecap="round" stroke-width="4.5">
+      <line x1="0" y1="0" x2="0" y2="-42" stroke="#FA1087" opacity="0.6" />
+      <line x1="0" y1="0" x2="36.4" y2="-21" stroke="#FA1087" opacity="0.6" />
+      <line x1="0" y1="0" x2="-36.4" y2="-21" stroke="#FA1087" opacity="0.6" />
+      <line x1="0" y1="0" x2="36.4" y2="21" stroke="#4B68F6" opacity="0.6" />
+      <line x1="0" y1="0" x2="-36.4" y2="21" stroke="#4B68F6" opacity="0.6" />
+      <line x1="0" y1="0" x2="0" y2="42" stroke="#4B68F6" opacity="0.6" />
+    </g>
+
+    <!-- Center Hub -->
+    <circle cx="0" cy="0" r="15" fill="url(#centerSphere)" stroke="#818CF8" stroke-width="2.5" />
+    <circle cx="0" cy="0" r="5" fill="#38BDF8" opacity="0.9" />
+
+    <!-- Top 3 Pink/Magenta Outer Nodes -->
+    <g filter="url(#softGlow)">
+      <circle cx="0" cy="-42" r="11" fill="url(#pinkSphere)" stroke="#FFFFFF" stroke-width="0.75" />
+      <circle cx="36.4" cy="-21" r="11" fill="url(#pinkSphere)" stroke="#FFFFFF" stroke-width="0.75" />
+      <circle cx="-36.4" cy="-21" r="11" fill="url(#pinkSphere)" stroke="#FFFFFF" stroke-width="0.75" />
+    </g>
+
+    <!-- Bottom 3 Blue/Indigo Outer Nodes -->
+    <g filter="url(#softGlow)">
+      <circle cx="36.4" cy="21" r="11" fill="url(#blueSphere)" stroke="#FFFFFF" stroke-width="0.75" />
+      <circle cx="-36.4" cy="21" r="11" fill="url(#blueSphere)" stroke="#FFFFFF" stroke-width="0.75" />
+      <circle cx="0" cy="42" r="11" fill="url(#blueSphere)" stroke="#FFFFFF" stroke-width="0.75" />
+    </g>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(136, 0)">
+    <text x="0" y="82" font-family="Inter, Montserrat, 'Segoe UI', system-ui, sans-serif" font-weight="800" font-size="58" letter-spacing="-0.5">
+      <tspan fill="url(#whiteGrad)">NextGen</tspan>
+      <tspan fill="url(#pinkTextGrad)">2AI</tspan>
+    </text>
+
+    <!-- Tagline -->
+    <text x="4" y="118" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-weight="400" font-size="16" letter-spacing="2.8" fill="#94A3B8">
+      Every Contact. Connected by AI.
+    </text>
+  </g>
+</svg>
