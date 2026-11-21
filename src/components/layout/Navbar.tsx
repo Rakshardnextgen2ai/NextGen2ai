@@ -31,18 +31,17 @@ export function Navbar() {
   return (
     <header className="fixed top-4 md:top-6 left-0 right-0 z-50 px-4 md:px-8 xl:px-16 pointer-events-none">
       <div
-        className={`w-full max-w-[1920px] mx-auto pointer-events-auto rounded-full transition-all duration-300 border ${
-          isScrolled
-            ? "bg-[#04010A]/95 backdrop-blur-2xl border-emerald-500/30 shadow-[0_15px_40px_rgba(0,0,0,0.8)] py-3 px-6 md:px-10"
-            : "bg-[#070312]/90 backdrop-blur-xl border-white/15 shadow-[0_10px_35px_rgba(0,0,0,0.6)] py-3.5 px-6 md:px-10"
-        } flex items-center justify-between relative`}
+        className={`w-full max-w-[1920px] mx-auto pointer-events-auto rounded-full transition-all duration-300 border ${isScrolled
+          ? "bg-[#09070E]/95 backdrop-blur-2xl border-emerald-500/5 shadow-[0_15px_40px_rgba(0,0,0,0.8)] py-3 px-6 md:px-10"
+          : "bg-[#0B0910]/90 backdrop-blur-xl border-white/10 shadow-[0_10px_35px_rgba(0,0,0,0.6)] py-3.5 px-6 md:px-10"
+          } flex items-center justify-between relative`}
       >
         <Link href="/" className="flex items-center gap-3 group">
           <Image
             src={nextgenlogo}
             alt="NextGen2AI Logo"
-            width={220}
-            height={80}
+            width={250}
+            height={100}
             className="transition-transform duration-300 group-hover:scale-105"
             priority
           />
@@ -54,7 +53,7 @@ export function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-white/90 hover:text-white px-4 py-2 rounded-full hover:bg-white/5 transition-all duration-200"
+              className="text-2xl font-medium text-white/90 hover:text-white px-4 py-2 rounded-full hover:bg-white/5 transition-all duration-200"
             >
               {link.name}
             </Link>
@@ -90,13 +89,13 @@ export function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-lg font-medium text-white hover:text-emerald-400 transition-colors"
+                  className="text-2xl font-medium text-white hover:text-emerald-400 transition-colors"
                 >
                   {link.name}
                 </Link>
               ))}
-              <Button 
-                href="/contact" 
+              <Button
+                href="/contact"
                 className="w-full justify-center bg-emerald-500 hover:bg-emerald-400 border-0 text-white shadow-[0_0_15px_rgba(16,185,129,0.3)] font-semibold"
               >
                 Let's Talk
